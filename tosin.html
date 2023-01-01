@@ -2,17 +2,7 @@
 <html>
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4RHJ5BBLW9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4RHJ5BBLW9');
-</script>
-
-  <title>Leke Onashile</title>
+  <title>'Leke Onashile</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
   <meta name="description" content="Leke Onashile" />
@@ -20,7 +10,7 @@
   <meta name="robots" content="index, follow" />
   <meta name="language" content="English" />
   <meta name="author" content="'Leke Onashile" />
-  <link rel="shortcut icon" href="https://cdn.statically.io/gh/LekeOnashile/LekeNash-homepage/main/favicon/fav.png" type="image/x-png" />
+  <link rel="shortcut icon" href="/favicon/fav.png" type="image/x-png" />
 
   <style>
     @font-face {
@@ -60,6 +50,16 @@
       font-size: 18px;
     }
 
+    .night-mode {
+      background-color: black;
+      color: white;
+
+    }
+    .avatar {
+  cursor: pointer;
+}
+
+
     @media only screen and (max-width: 1000px) {
       .intro {
         margin: 0 30%;
@@ -90,8 +90,8 @@
       width: 25px;
       margin-left: 20px;
     }
-
-      .hoverable {
+    
+    .hoverable {
   color: black;
   background-color: white;
 }
@@ -100,9 +100,13 @@
   color: white;
   background-color: black;
 }
-  </style>
 
-  <script src="js/mouse.js"></script>
+  </style>
+  <script async src="https://www.googletagmanager.com/"></script>
+  <script src="/"></script>
+
+
+
 </head>
 
 <body>
@@ -112,31 +116,42 @@
     <div class="intro">
       <div style="text-align: right; margin-bottom: 50px;">
         <a href="index.html">
-          <img class="avatar" src="https://cdn.statically.io/gh/LekeOnashile/LekeNash-homepage/main/avatar.jpg" width="100">
+          <img class="avatar" src="avatar.jpg" width="100">
         </a>
       </div>
-      <p> Hi, I'm <span class="hoverable">Leke Onashile</span> </p>
-      <p>I am a Civil Engineer living and working in <span class="hoverable">Lagos.</span> I'm also a product manager and game developer. </p>
-      
-      <p>I previously was a researcher at blah & blah. Please add more about this to make it look lengthy and serious.</p>
+      <img id="night-mode-button" class="avatar" src="avatar.jpg" width="100">
+
+
+      <p>Hello there, my name is <span class="hoverable"> 'Leke Onashile.</span></span></p>
+      <p>I live in Lagos and work as a Civil Engineer. I'm also a product manager and game developer. </p>
+      <p>I am also a <a href="#" target="_blank">1st Something</a> 📝,
+        <a href="#" target="_blank">2nd something</a> 📸,
+        and <a href="#" target="_blank">3rd something</a> 🌍.
       </p>
-      <p> You can send me an email at <span class="hoverable">leke [at] lekeonashile [dot] com</span> </p>
+      <p> You can send me an email at <span class="hoverable"> leke [at] lekeonashile [dot] com</span> </p>
       <p>
         <a href="#">Here</a> are some projects I have made.
       </p>
       <p class="social">
         <a href="https://github.com/LekeOnashile/" target="_blank">
-          <img class="icon" src="https://cdn.statically.io/gh/LekeOnashile/LekeNash-homepage/main/static/fontawesome/svgs/brands/github.svg" alt="github icon" />
+          <img class="icon" src="/static/fontawesome/svgs/brands/github.svg" alt="github icon" />
         </a>
-        <a href="https://www.linkedin.com/in/lekeoo/" target="_blank">
-          <img class="icon" src="https://cdn.statically.io/gh/LekeOnashile/LekeNash-homepage/main/static/fontawesome/svgs/brands/linkedin.svg" alt="linkedin icon" />
+        <a href="#" target="_blank">
+          <img class="icon" src="/static/fontawesome/svgs/brands/instagram.svg" alt="github icon" />
         </a>
         <a href="https://twitter.com/LekeOnashile" target="_blank">
-          <img class="icon" src="https://cdn.statically.io/gh/LekeOnashile/LekeNash-homepage/main/static/fontawesome/svgs/brands/twitter.svg" alt="twitter icon" />
+          <img class="icon" src="/static/fontawesome/svgs/brands/twitter.svg" alt="github icon" />
         </a>
       </p>
     </div>
   </div>
+  <script> const button = document.getElementById('night-mode-button');
+
+    button.addEventListener('click', function() {
+      document.body.classList.toggle('night-mode');
+    });
+    
+  </script>
 </body>
 
 </html>
