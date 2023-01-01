@@ -100,6 +100,29 @@
   color: white;
   background-color: black;
 }
+
+ #cursor {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 720px) {
+
+  #cursor {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background: #FFD600;
+    pointer-events: none;
+    border-radius: 100px;
+    z-index: -1;
+  }
+
+}
   </style>
 
   <script src="js/mouse.js"></script>
