@@ -22,61 +22,76 @@
   <meta name="author" content="'Leke Onashile" />
   <link rel="shortcut icon" href="/favicon/fav.png" type="image/x-png" />
   <style>
-      @font-face {
-      font-family: "Noto Sans TC";
+   @font-face {
+      font-family: 'Noto Sans TC';
       font-style: normal;
       font-weight: 400;
-      src: local("Noto Sans TC Regular"), local("NotoSansTC-Regular"),
-        url(https://fonts.gstatic.com/s/notosanstc/v4/-nF7OG829Oofr2wohFbTp9i1OCEJ.otf) format("opentype");
+      src: local('Noto Sans TC Regular'), local('NotoSansTC-Regular'), url(https://fonts.gstatic.com/s/notosanstc/v4/-nF7OG829Oofr2wohFbTp9i1OCEJ.otf) format('opentype');
     }
 
     body {
-      font-family: "Noto Sans TC", sans-serif;
       margin: 0;
-      /* background-color: #fffef9; */
+      /* background-color: #f7f4ed; */
     }
 
     a {
-      text-decoration: none;
       color: #000;
+      font-weight: 900;
     }
 
-    .header {
-      margin-top: 32px;
+    .body {
+      font-family: 'Noto Sans TC', sans-serif;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
-    .logo {
-      width: 150px;
-      margin-top: 6px;
+    .holdon {
+      margin-top: 50px;
+      width: 100%;
     }
 
-    .block {
-      display: block;
-    }
-
-    .proj {
-      text-align: center;
-      margin-top: 32px;
-      padding: 0 5%;
-    }
-
-    .proj-name {
-      font-size: 18px;
-      font-weight: 600;
-      margin: 12px 0;
-    }
-
-    .proj-desc {
-      margin: 12px 0;
-    }
-
-    .proj-logo {
-      background: #fff;
+    .avatar {
       border-radius: 50%;
     }
 
-    .footer {
-      margin: 50px 0;
+    .intro {
+      font-size: 18px;
+    }
+     .night-mode {
+      background-color: black;
+      color: white;
+      }
+
+    @media only screen and (max-width: 1000px) {
+      .intro {
+        margin: 0 30%;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .intro {
+        margin: 0 25%;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .intro {
+        margin: 0 32px;
+      }
+    }
+
+    .social {
+      text-align: right;
+    }
+
+    .social a {
+      text-decoration: none;
+    }
+
+    .icon {
+      width: 25px;
+      margin-left: 20px;
     }
   </style>
 </head>
