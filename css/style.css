@@ -1,0 +1,98 @@
+@font-face {
+      font-family: 'Noto Sans TC';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Noto Sans TC Regular'), local('NotoSansTC-Regular'), url(https://fonts.gstatic.com/s/notosanstc/v4/-nF7OG829Oofr2wohFbTp9i1OCEJ.otf) format('opentype');
+    }
+
+    body {
+      margin: 0;
+      /* background-color: #f7f4ed; */
+    }
+
+    a {
+      color: #000;
+      font-weight: 900;
+    }
+
+    .body {
+      font-family: 'Noto Sans TC', sans-serif;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .holdon {
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .avatar {
+      border-radius: 50%;
+    }
+
+    .intro {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .intro {
+        margin: 0 30%;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .intro {
+        margin: 0 25%;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .intro {
+        margin: 0 32px;
+      }
+    }
+
+    .social {
+      text-align: right;
+    }
+
+    .social a {
+      text-decoration: none;
+    }
+
+    .icon {
+      width: 25px;
+      margin-left: 20px;
+    }
+
+      .hoverable {
+  color: black;
+  background-color: white;
+}
+
+.hoverable:hover {
+  color: white;
+  background-color: black;
+}
+
+ #cursor {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 720px) {
+
+  #cursor {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background: #FFD600;
+    pointer-events: none;
+    border-radius: 100px;
+    z-index: -1;
+  }
